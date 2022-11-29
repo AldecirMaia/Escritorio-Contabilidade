@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body{             
+    height: 100%;
+}
+
+/* Classes Auxiliares */
+
+.center{
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+.clear{
+    clear: both;
+}
+section.layer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.7);
+    z-index:1 ;
+}
+section.main{
+    position: relative;
+    background-image: url('../imagens/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 15px 0;
+    min-height: 800px;
+}
+select.main header{
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.icons-social{
+    float: right;
+}
+.icons-social a{
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.logo{
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    float: left;
+    font-weight: bold;
+}
+nav.desktop{
+    margin-top: 10px;
+    float: right;
+}
+nav.desktop ul{
+    list-style-type: none;
+}
+nav.desktop li{
+    display: inline-block;
+    margin: 010px;
+    font-size: 17px;
+    font-weight: bolder;
+}
+nav.desktop a{
+    text-decoration:none;  
+}
+nav.mobile{
+    display: none;
+}
+nav.mobile > i{
+    position: relative;
+    top: 23px;
+    cursor: pointer;
+    font-size: 25px;
+    color: rgb(2, 2, 2);
+}
+nav.mobile ul{
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 93px;
+    background: white;
+    list-style-type: none;
+}
+nav.mobile li{
+    padding: 8px 0;
+    text-align: center;
+    font-weight: lighter;
+    border-bottom: 1px solid #444;
+}
+nav.mobile a{
+    display: block;
+    text-decoration: none;
+    color: #444;
+}
+.conteudo-header{
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    margin: 90px 0;
+    
+}
+.conteudo-header h2{
+    color: white;
+    font-weight: lighter;
+    font-size: 40px;
+}
+.conteudo-header h2 > span{
+    color: #2692ff;
+}
+.conteudo-header p{
+    color: white;
+    margin-top: 18px;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: justify;
+}
+.conteudo-header a{
+    display: block;
+    width: 144px;
+    height: 44px;
+    background: #2692ff;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    text-decoration: none;
+    border-radius: 22px;
+    margin-top: 18px;
+}
+
+/* Planos */
+
+.chamada-planos{
+    width: 100%;
+    text-align: center;
+    padding: 27px 2%;
+    background: rgb(220, 220, 220);
+}
+.chamada-planos h2{
+    display: inline-block;
+    border-top: 2px solid #2692ff;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #2692ff;
+    font-size: 20px;
+}
+.box-planos{
+    padding: 40px 0;
+}
+.box-planos > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-planos-singles{
+    width: 33.3%;
+    padding: 0 12px;
+}
+.box-planos-warper{
+    width: 100%;
+    border: 1px solid #ccc;
+    min-height: 300px;
+    box-shadow: 0 0 1em #2692ff;
+}
+.box-planos-singles h2{
+    background: #2692ff;
+    color: white;
+    text-align: center;
+    padding: 2px 2%;
+    font-weight: lighter;
+}
+.pontos-planos{
+    padding: 8px 0 15px 0;
+}
+.box-planos p{
+    color: #777777;
+    font-size: 16px;
+    padding-top: 6px;
+    margin-left: 16px;
+}
+.preços{
+    margin-top: 10px;
+    padding: 20px 0;
+    text-align: center;
+}
+.preços h2{
+    font-size: 30px;
+    color: #777;
+    font-weight: bolder;
+    background-color: transparent;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+/* Parallax */
+
+section.parallax{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+    background-image: url(/imagens/teclado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+section.parallax > .center{
+    position: relative;
+    z-index: 2;
+    margin: 40px auto;
+    max-width: 960px;
+    color: white;
+}
+section.parallax h2{
+    text-align: center;
+    padding-top: 15px;
+} section.parallax p{
+    margin-top: 15px;
+    text-align: justify;
+}
+.overlai-parallax{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(20, 20, 20, 0.6);
+}
+/* Final Section*/
+section.final-section{
+    padding: 50px 0;
+}
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+    margin: 10px auto;
+}
+section.final-section h2{
+    position: relative;
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+section.final-section h2 > .borda{
+    width: 7%;
+    height: 4px;
+    background: #777;
+    position: absolute;
+    transition: 0.4s;
+}
+section.final-section h2:hover > .borda{ /*efeito de animação */
+    width: 18%;
+    
+}
+.contato input:not([type=submit]){
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    display: block;
+    padding-left: 8px;
+    margin-top: 10px;
+}
+.contato textarea{
+    width: 100%;
+    height: 130px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-top: 10px;
+    resize: vertical;
+
+}
+.contato input[type=submit]{
+    cursor: pointer;
+    background: #2692ff;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    width: 100px;
+    height: 33px;
+    margin-top: 8px;
+}
+.time > .w50{
+    width: 48%;
+    margin: 0 1%;
+}
+.equipe-single .avatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ccc;
+}
+.equipe-single{
+    box-shadow: 0 0 1em #2692ff;
+    min-height: 200px;
+}
+.info-usuario{
+    display: inline-block;
+    color: #777777;
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.equipe-single .top-box-usuario{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.descricao-usuario-box{
+    color: #999;
+    text-align: justify;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 100px;
+    padding: 50px 2%;
+    color:white;
+    background: #444;
+    text-align: center;
+}
+@media screen and (max-width: 780px) {
+    .desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: block;
+        float: right;
+    }
+    .mobile ul{
+        display: none;
+    }
+    .mobile i{
+        cursor: pointer;
+        position: relative;
+        top: 19px;
+        font-size: 25px;
+        color: white;
+    }
+    .w50{
+        width: 100%;
+        
+    }
+    .time > .w50{
+        width: 100%;
+        margin: 15px 2%;
+    }
+    .box-planos-singles{
+        width: 100%;
+        margin: 40px auto;
+        
+    }
+   .box-planos-warper{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+   }
+}
